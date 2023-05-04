@@ -38,13 +38,13 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.175" />
     <PackageReference Include="PaulMiami.AspNetCore.Mvc.Recaptcha" Version="1.2.2" />
     <PackageReference Include="Abp.HangFire" Version="6.5.0" />
     <PackageReference Include="Abp.RedisCache" Version="6.5.0" />
     <PackageReference Include="Abp.Castle.Log4Net" Version="6.5.0" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\Departments\" />
     <Folder Include="wwwroot\libs\" />
     <Folder Include="wwwroot\view-resources\Views\Department\" />
     <Folder Include="wwwroot\view-resources\Views\_Bundles\" />

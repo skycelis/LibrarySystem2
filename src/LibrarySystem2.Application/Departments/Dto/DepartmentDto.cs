@@ -14,7 +14,7 @@ namespace LibrarySystem2.Departments.Dto
     [AutoMapFrom(typeof(Department))]
     public class DepartmentDto : EntityDto<int>
     {
-        public string Name { get; set; }
+        public string Name { get; set; } 
        
     }
 }

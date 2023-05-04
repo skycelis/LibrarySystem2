@@ -23,9 +23,9 @@ namespace LibrarySystem2.Web.Startup
                 )
                 .AddItem(
                     new MenuItemDefinition(
-                        PageNames.Home,
-                        L("HomePage"),
-                        url: "",
+                        PageNames.Department,
+                        L("Department"),
+                        url: "Department",
                         icon: "fas fa-home",
                         requiresAuthentication: true
                     )

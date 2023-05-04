@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using LibrarySystem2.Entities;
 using LibrarySystem2.Departments.Dto;
 using Abp.Domain.Entities;
+using Abp.Application.Services.Dto;
+using Abp.Domain.Repositories;
 
 namespace LibrarySystem2.Departments
 {
@@ -26,14 +28,21 @@ namespace LibrarySystem2.Departments
         {
             return base.DeleteAsync(input);
         }
-
-        public override Task<PagedResultDto<DepartmentDto>> GetAllSync(PagedDepartmentResultRequestDto input)
+        
+        
+        public override Task <PagedResultDto<DepartmentDto>> GetAllAsync(PagedDepartmentResultRequestDto input)
         {
-            return base.GetAllAsync 
+            return base.GetAllAsync(input);
         }
+        
+
         public override Task<DepartmentDto> GetAsync(EntityDto<int> input)
         {
-            return base.GetAsync(input);
+            return base.GetAsync(input); 
+        }
+        public override Task<DepartmentDto> UpdateAsync(DepartmentDto input)
+        {
+            return base.UpdateAsync(input);
         }
     }
 

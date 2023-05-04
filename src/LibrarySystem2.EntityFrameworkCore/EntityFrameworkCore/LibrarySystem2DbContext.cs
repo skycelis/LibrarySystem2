@@ -11,6 +11,8 @@ namespace LibrarySystem2.EntityFrameworkCore
     public class LibrarySystem2DbContext : AbpZeroDbContext<Tenant, Role, User, LibrarySystem2DbContext>
     {
         /* Define a DbSet for each entity of the application */
+
+        public virtual DbSet<Department> AbpDepartment { get; set; }
         public DbSet<Department> Departments { get; set;} 
         public LibrarySystem2DbContext(DbContextOptions<LibrarySystem2DbContext> options)
             : base(options)
